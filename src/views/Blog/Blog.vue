@@ -91,7 +91,7 @@ hr {
   .body-blog {
     /* top: -7rem; */
     padding-bottom: 12rem;
-    background-image: url("../../assets/images/blogBg-yellow-mobile.svg");
+    /* background-image: url("../../assets/images/blogBg-yellow-mobile.svg"); */
     /* position: relative; */
     padding-top: 5rem;
     padding-inline: 4vw;

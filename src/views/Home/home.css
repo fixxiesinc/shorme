@@ -80,7 +80,7 @@
     padding-top: 3rem;
     padding-inline: 5vw;
     padding-bottom: 15rem;
-    background-image: url("../../assets/images/blogBg-mobile.svg");
+    /* background-image: url("../../assets/images/blogBg-mobile.svg"); */
   }
 
   .blog-image {
