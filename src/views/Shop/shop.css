@@ -1,0 +1,91 @@
+.outline-button-pink {
+  border: 1.5px solid;
+  background-color: transparent;
+  border-style: solid;
+  margin-left: 16px;
+  transition: background 0.15s;
+  border-image: linear-gradient(to right, #d91883, #fb449c) 1;
+  color: #eb38af;
+}
+
+.outline-button-pink:hover {
+  color: white;
+  background: linear-gradient(90deg, #d91883 0%, #fb449c 100%);
+}
+
+.focused-button-shop-pink {
+  margin-top: 0px;
+  height: 44px;
+  margin-left: 16px;
+  color: white;
+  background: linear-gradient(90deg, #d91883 0%, #fb449c 100%);
+}
+
+.outline-button-blue {
+  border: 1.5px solid;
+  background-color: transparent;
+  border-style: solid;
+  margin-left: 16px;
+  transition: background 0.15s;
+  color: #307cc0;
+  border-image: linear-gradient(to right, #287ecd, #19b2cb, #19b2cb) 1;
+}
+
+.outline-button-blue:hover {
+  color: white;
+  background: linear-gradient(90deg, #287ecd 0%, #19b2cb 50%, #19b2cb 100%);
+}
+
+.focused-button-shop-blue {
+  margin-top: 0px;
+  height: 44px;
+  margin-left: 16px;
+  color: white;
+  background: linear-gradient(90deg, #287ecd 0%, #19b2cb 50%, #19b2cb 100%);
+}
+
+.container img {
+  height: 25px;
+  margin-left: 12px;
+}
+
+.shop-items-container {
+  margin-top: 50px;
+}
+
+.category-item {
+  display: flex;
+}
+
+.category-details {
+  margin-left: 12rem;
+}
+
+.category-details .cream-flavor {
+  margin: 0px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.price-and-order-button {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.price-and-order-button h4 {
+  font-weight: 300;
+  margin-right: 18px;
+  margin-top: 0px;
+}
+
+.price-and-order-button button {
+  color: #eb38af;
+  background: #e6e6e6;
+  margin-top: 0px;
+}
+
+.shop-section-men .price-and-order-button button {
+  color: #307cc0;
+  background: #e6e6e6;
+}
