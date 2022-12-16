@@ -91,6 +91,6 @@ export default {
 }
 
 .toggle-buttons button {
-  margin: 0px;
+  margin-top: 0px;
 }
 </style>
