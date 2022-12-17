@@ -48,7 +48,7 @@ li .quick-link-item {
 p {
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h1 {
@@ -66,13 +66,13 @@ h2 {
 h3 {
   font-size: 32px;
   font-weight: 300;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h4 {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 body {
@@ -111,17 +111,9 @@ button {
   padding-inline: 4vw;
 }
 
-.hero-content {
-  /* max-width: 50%; */
-}
-
-.hero-title {
-  margin-top: 0px;
-}
-
 .hero-caption {
   margin-top: 6px;
-  max-width: 60%;
+  max-width: 80%;
   font-weight: 300;
 }
 
@@ -135,26 +127,26 @@ button {
   p {
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: 300;
   }
 
   h1 {
-    font-size: 9vw;
+    font-size: 1.8rem;
     font-weight: 400;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   h2 {
-    font-size: 9vw;
+    font-size: 18px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin: 0px;
   }
 
   h3 {
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   h4 {
@@ -165,18 +157,18 @@ button {
 
   .hero-section {
     padding-inline: 5vw;
-    padding-top: 10vh;
+    /* padding-top: 2rem; */
+    /* border: 1px solid red; */
   }
 
-  .hero-content {
-    max-width: 100%;
-    margin-top: 10px;
-    padding-bottom: 40px;
+  .hero-section h1 {
+    /* border: 1px solid white; */
   }
 
   .hero-caption {
     margin-top: 6px;
     max-width: 100%;
+    /* border: 1px solid yellow; */
   }
 
   .yellow-button {

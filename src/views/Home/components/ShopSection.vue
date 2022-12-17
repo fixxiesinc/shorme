@@ -20,11 +20,7 @@
 
     <!-- shop items -->
     <div class="category-item">
-      <img
-        src="../../../assets/images/creams.svg"
-        class="category-item-image"
-        alt="Product image"
-      />
+      <img src="../../../assets/images/creams.svg" alt="Product image" />
       <div class="category-details">
         <h3>Shea Butter Hand Lotion</h3>
         <h4 class="cream-flavor">+ Avocado Oil</h4>
@@ -47,12 +43,11 @@ export default {
 </script>
 
 <style scoped>
-@import "../home.css";
 @import "../../../assets/styles.css";
 
 .shop-section {
   padding-inline: 4vw;
-  margin-top: 14vh;
+  padding-top: 10rem;
 }
 
 .shop-header {
@@ -74,18 +69,48 @@ export default {
   color: #eb38af;
 }
 
-.category-details > p {
-  font-style: italic;
-  font-size: 20px;
-  letter-spacing: 0.02em;
-  color: #f7ea9d;
-}
 .category-details button {
   color: white;
   background: #eb38af;
 }
 
 .cream-flavor {
-  margin-top: 60px;
+  color: #f7ea9d;
+}
+
+@media screen and (max-width: 480px) {
+  .shop-section {
+    padding-top: 5rem;
+    padding-inline: 5vw;
+  }
+
+  .arrow {
+    height: 20px;
+    padding-left: 8px;
+  }
+
+  .category-item {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .category-item > img {
+    width: 20rem;
+    top: -60px;
+    position: relative;
+  }
+
+  .category-details {
+    margin-left: auto;
+    max-width: 100%;
+  }
+
+  .cream-flavor {
+    margin-top: 6px;
+  }
+
+  .price-and-order-button {
+    margin-top: 50px;
+  }
 }
 </style>

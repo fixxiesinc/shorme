@@ -13,6 +13,10 @@
   <!-- illustration (image of woman) -->
   <section class="illustration-section">
     <img src="../../assets/images/woman.png" alt="Woman" />
+    <!-- <picture>
+      <source media="(max-width: 480px)" srcset="../../assets/images/woman.png" />
+      <source media="(min-width: 480px)" srcset="../../assets/images/woman.png" />
+    </picture> -->
   </section>
 
   <!-- features section -->
@@ -194,5 +198,106 @@
   height: 100vh;
   margin-top: -40px;
   margin-inline: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .feature-section {
+    padding-inline: 5vw;
+    padding-top: 4vw;
+  }
+
+  .features {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
+  .features img {
+    height: 40px;
+  }
+
+  .features div {
+    margin-bottom: 20px;
+  }
+
+  .feature-section p {
+    padding-top: 30px;
+    text-align: center;
+    word-spacing: 2px;
+    /* line-height: 26px; */
+    width: 100%;
+  }
+
+  .discover {
+    display: block;
+    padding-inline: 4vw;
+    margin-top: 10vw;
+    padding-bottom: 25rem;
+    background-image: url("../../assets/images/about_bg.svg");
+  }
+
+  .discover p {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .for-men {
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .for-men h2 {
+    color: #307cc0;
+    text-align: left;
+  }
+
+  .for-men button {
+    color: white;
+    background: linear-gradient(90deg, #287ecd 0%, #19b2cb 100%, #19b2cb 100%);
+  }
+
+  .for-men img {
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4vh;
+  }
+
+  .for-women {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .for-women h2 {
+    color: #eb38af;
+  }
+
+  .for-women button {
+    color: white;
+    background: linear-gradient(90deg, #d91883 0%, #fb449c 100%);
+  }
+
+  .for-women img {
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4vh;
+  }
+
+  .vl {
+    border-left: 0.5px solid #e6e6e6;
+    height: 1vh;
+    margin-top: -40px;
+    margin-inline: 40px;
+  }
 }
 </style>

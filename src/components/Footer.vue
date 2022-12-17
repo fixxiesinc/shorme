@@ -9,7 +9,7 @@
 
     <!-- quick links -->
     <div class="quick-links">
-      <p class="brown-label">quick links</p>
+      <p class="label">quick links</p>
       <ul>
         <li>
           <router-link to="/about" class="quick-link-item">about</router-link>
@@ -28,7 +28,7 @@
 
     <!-- sign up -->
     <div class="sign-up">
-      <p class="brown-label">sign up</p>
+      <p class="label">sign up</p>
       <h4 class="join-our-newsletter">
         Join our newsletter to get some tips from the best.
       </h4>
@@ -84,7 +84,7 @@
   color: black;
 }
 
-.quick-links > .brown-label {
+.quick-links p {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 16px;
@@ -92,18 +92,22 @@
   margin: 0px;
 }
 
+.quick-links ul {
+  margin-top: 16px;
+}
+
 .quick-link-item {
-  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 300;
   color: black;
   display: inline;
 }
 
-.sign-up > .brown-label {
+.sign-up p {
   font-weight: 500;
   font-size: 20px;
   color: black;
-  margin: 0px;
+  margin-bottom: 16px;
 }
 
 .join-our-newsletter {
@@ -157,28 +161,31 @@
     margin-top: -15rem;
     padding-inline: 5vw;
     padding-top: 10vh;
+    padding-bottom: 80px;
     background-image: url("../assets/images/footer-bezier-mobile.svg");
   }
 
   .quick-links {
-    margin-top: 10vh;
+    margin-top: 3rem;
   }
 
-  .links {
-    margin-top: 0px;
+  .quick-links ul {
+    margin-top: 16px;
   }
 
   .sign-up {
-    margin-top: 10vh;
+    margin-top: 3rem;
   }
 
   .join-our-newsletter {
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 0px;
   }
 
   .email-area {
     display: flex;
     margin-top: 16px;
+    background: black;
   }
 
   .email-field {
@@ -187,8 +194,8 @@
   }
 
   .submit-email-button {
-    width: 8%;
-    padding-inline: 12px;
+    width: 7%;
+    padding-inline: 16px;
   }
 }
 </style>

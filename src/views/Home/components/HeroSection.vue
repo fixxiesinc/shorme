@@ -1,23 +1,19 @@
 <template>
   <section class="hero-section">
-    <div class="hero-content">
-      <div>
-        <h1 class="hero-title">Discovering Beauty</h1>
-        <p class="hero-caption">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-          ligula vel tortor luctus
-        </p>
-        <button>discover more</button>
-      </div>
-
-      <!-- shea butter image -->
+    <div>
+      <h1>Discovering Beauty</h1>
+      <p class="hero-caption">
+        Shorme formulates cosmetic products from natural elements. Our ingredients
+        are sourced from organic plants from across Africa, hand-made with culture,
+        experience and love.
+      </p>
+      <button>discover more</button>
     </div>
   </section>
 </template>
 
 <style>
 @import "../../../assets/styles.css";
-@import "../home.css";
 
 button {
   margin-top: 40px;

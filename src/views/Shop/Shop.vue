@@ -6,8 +6,7 @@
       <div>
         <h1>shop</h1>
         <p class="hero-caption">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-          ligula vel tortor luctus
+          We look to reveal the Africa in You, the natural beauty and color.
         </p>
       </div>
     </div>
@@ -92,5 +91,29 @@ export default {
 
 .toggle-buttons button {
   margin-top: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    display: block;
+    padding-bottom: 14rem;
+    /* justify-content: space-between;
+  align-items: flex-start; */
+  }
+
+  .hero-content {
+    padding-bottom: 40px;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    margin-left: 0px;
+  }
+
+  .toggle-buttons button {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
 }
 </style>

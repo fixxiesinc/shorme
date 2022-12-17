@@ -129,4 +129,15 @@
   height: 20px;
   margin-left: 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .next-blog {
+    margin-top: 2rem;
+  }
+
+  .blog-detail-image {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
 </style>

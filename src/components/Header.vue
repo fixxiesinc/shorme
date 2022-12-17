@@ -106,6 +106,10 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    width: 10rem;
+  }
+
   .closed-menu {
     display: none;
   }
@@ -132,7 +136,7 @@ export default {
   }
 
   .open-menu {
-    height: 40vh;
+    height: 100vh;
   }
 }
 </style>

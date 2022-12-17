@@ -4,7 +4,7 @@
     <h1 class="brown-label">blog</h1>
 
     <!-- blogs -->
-    <section>
+    <section class="blogs">
       <!-- blog 1 -->
       <div>
         <div class="blog-item">
@@ -80,33 +80,32 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
-  .hero-section-blog {
-    background-color: #f9e3b1;
-    color: #985531;
-    padding-inline: 4vw;
-    padding-bottom: 8rem;
-    border: 1px solid transparent;
-  }
-
   .body-blog {
     /* top: -7rem; */
-    padding-bottom: 12rem;
+    padding-bottom: 25rem;
     /* background-image: url("../../assets/images/blogBg-yellow-mobile.svg"); */
     /* position: relative; */
-    padding-top: 5rem;
-    padding-inline: 4vw;
+    padding-top: 0rem;
+    padding-inline: 5vw;
+  }
+
+  .blogs {
+    margin-top: -2rem;
   }
 
   .blog-image {
-    /* margin-top: 0px; */
+    margin-top: 0px;
     height: 100px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   hr {
-    margin-block: 30px;
-    border: 0.5px solid #985531;
-    opacity: 0.4;
+    margin-block: 40px;
+    border: 0.1px solid #e6e6e6;
+  }
+
+  .blog-item {
+    margin-top: 0px;
   }
 }
 </style>

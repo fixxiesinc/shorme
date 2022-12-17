@@ -77,7 +77,7 @@
 .shop-section-men {
   top: -10rem;
   padding-bottom: 15rem;
-  background-image: url("../assets/images/blueBg.svg");
+  background-image: url("../assets/images/blue_bg.svg");
   position: relative;
   padding-top: 12rem;
   padding-inline: 4vw;
