@@ -4,11 +4,7 @@
     <div class="left-pane">
       <section>
         <h1>contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iusto
-          obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Adipisci, iusto obcaecati.
-        </p>
+        <p>We look to reveal the Africa in You, the natural beauty and color.</p>
       </section>
 
       <!-- address -->
@@ -44,5 +40,77 @@
 
 <style>
 @import "../../assets/styles.css";
-@import "./contact.css";
+
+.body {
+  padding-top: 2vh;
+  padding-inline: 4vw;
+  background-color: black;
+  padding-bottom: 28rem;
+}
+
+.left-pane {
+  max-width: 45%;
+  margin-top: 0px;
+}
+
+.left-pane section h1 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+.left-pane section p {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.address {
+  font-size: 15px;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.email,
+.phone {
+  font-size: 15px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+.text-address {
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+
+.left-pane hr {
+  margin-block: 20px;
+  border: 0.1px solid rgba(230, 230, 230, 0.5);
+}
+
+.social-media-icons {
+  margin-top: 30px;
+}
+
+.social-media-icons > img {
+  height: 32px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    padding-top: 0vh;
+    padding-inline: 5vw;
+    padding-bottom: 24rem;
+  }
+
+  .left-pane {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  .left-pane section p {
+    margin-top: 6px;
+  }
+}
 </style>

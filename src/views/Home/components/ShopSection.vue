@@ -56,6 +56,12 @@ export default {
   justify-content: space-between;
 }
 
+.arrow {
+  /* height: 20px; */
+  padding-left: 14px;
+  cursor: pointer;
+}
+
 .category-item {
   display: flex;
   align-items: center;
@@ -86,7 +92,7 @@ export default {
 
   .arrow {
     height: 20px;
-    padding-left: 8px;
+    padding-left: 12px;
   }
 
   .category-item {

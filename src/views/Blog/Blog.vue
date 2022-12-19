@@ -6,28 +6,26 @@
     <!-- blogs -->
     <section class="blogs">
       <!-- blog 1 -->
-      <div>
-        <div class="blog-item">
-          <img
-            src="../../assets/images/blog-image-1.png"
-            alt="Blog imame"
-            class="blog-image"
-          />
-          <div class="blog-description">
-            <div>
-              <h2 class="blog-title">Lemonade Or Water?</h2>
-              <router-link to="/blog-detail">
-                <p>
-                  read
-                  <span
-                    ><img
-                      src="../../assets/images/chevron-right.svg"
-                      alt="chevron-right"
-                      class="chevron-right"
-                  /></span>
-                </p>
-              </router-link>
-            </div>
+      <div class="blog-item">
+        <img
+          src="../../assets/images/blog-image-1.png"
+          alt="Blog imame"
+          class="blog-image"
+        />
+        <div class="blog-description">
+          <div>
+            <h2 class="blog-title">Lemonade Or Water?</h2>
+            <router-link to="/blog-detail">
+              <p class="read-label">
+                read
+                <span
+                  ><img
+                    src="../../assets/images/chevron-right.svg"
+                    alt="chevron-right"
+                    class="chevron-right"
+                /></span>
+              </p>
+            </router-link>
           </div>
         </div>
       </div>
@@ -35,28 +33,26 @@
       <hr />
 
       <!-- blog 2 -->
-      <div>
-        <div class="blog-item">
-          <img
-            src="../../assets/images/blog-image-2.png"
-            alt="Blog imame"
-            class="blog-image"
-          />
-          <div class="blog-description">
-            <div>
-              <h2 class="blog-title">Treating Your Skin The African Way</h2>
-              <router-link to="/blog-detail">
-                <p>
-                  read
-                  <span
-                    ><img
-                      src="../../assets/images/chevron-right.svg"
-                      alt="chevron-right"
-                      class="chevron-right"
-                  /></span>
-                </p>
-              </router-link>
-            </div>
+      <div class="blog-item">
+        <img
+          src="../../assets/images/blog-image-2.png"
+          alt="Blog imame"
+          class="blog-image"
+        />
+        <div class="blog-description">
+          <div>
+            <h2 class="blog-title">Lemonade Or Water?</h2>
+            <router-link to="/blog-detail">
+              <p class="read-label">
+                read
+                <span
+                  ><img
+                    src="../../assets/images/chevron-right.svg"
+                    alt="chevron-right"
+                    class="chevron-right"
+                /></span>
+              </p>
+            </router-link>
           </div>
         </div>
       </div>
@@ -74,9 +70,13 @@
   background-image: url("../../assets/images/blog_bg.svg");
 }
 
+.blogs {
+  margin-top: 5rem;
+}
+
 hr {
-  margin-block: 60px;
-  border: 0.1px solid #e6e6e6;
+  margin-block: 6rem;
+  border: 0.1px solid rgba(230, 230, 230, 0.5);
 }
 
 @media screen and (max-width: 480px) {
@@ -90,7 +90,7 @@ hr {
   }
 
   .blogs {
-    margin-top: -2rem;
+    margin-top: 0;
   }
 
   .blog-image {
@@ -100,12 +100,12 @@ hr {
   }
 
   hr {
-    margin-block: 40px;
-    border: 0.1px solid #e6e6e6;
+    margin-block: 50px;
+    border: 0.1px solid rgba(230, 230, 230, 0.5);
   }
 
-  .blog-item {
-    margin-top: 0px;
+  .read-label {
+    margin-top: 16px;
   }
 }
 </style>

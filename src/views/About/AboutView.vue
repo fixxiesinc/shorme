@@ -4,8 +4,9 @@
     <div>
       <h1 class="hero-title">Discovering Beauty</h1>
       <p class="hero-caption">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-        ligula vel tortor luctus
+        Shorme formulates cosmetic products from natural elements. Our ingredients
+        are sourced from organic plants from across Africa, hand-made with culture,
+        experience and love.
       </p>
     </div>
   </section>
@@ -22,41 +23,31 @@
   <!-- features section -->
   <section class="feature-section">
     <!-- features -->
-    <center>
-      <div class="features">
-        <!-- moisturizes -->
-        <div>
-          <center>
-            <img src="../../assets/images/moisturizes.svg" alt="Moisturize" />
-          </center>
-          <h4>moisturizes</h4>
-        </div>
-        <!-- protects -->
-        <div>
-          <center>
-            <img src="../../assets/images/protects.svg" alt="Protect" />
-          </center>
-          <h4>protects</h4>
-        </div>
-        <!-- smooth -->
-        <div>
-          <center>
-            <img src="../../assets/images/smooth.svg" alt="Smooth" />
-          </center>
-          <h4>smooth</h4>
-        </div>
+    <div class="features">
+      <!-- moisturizes -->
+      <div>
+        <img src="../../assets/images/moisturizes.svg" alt="Moisturize" />
+        <h4>moisturizes</h4>
       </div>
-    </center>
+      <!-- protects -->
+      <div>
+        <img src="../../assets/images/protects.svg" alt="Protect" />
+        <h4>protects</h4>
+      </div>
+      <!-- smooth -->
+      <div>
+        <img src="../../assets/images/smooth.svg" alt="Smooth" />
+        <h4>smooth</h4>
+      </div>
+    </div>
 
     <!-- description -->
-    <center>
-      <p>
-        Shorme is for the pro and aspiring all-natural-beauty outlookers. With shea
-        butter as our base ingredient, your are guaranteed moisture retention
-        abilities and vitamins with anti-aging properties, essential for healthy
-        skin and hair
-      </p>
-    </center>
+    <p>
+      Shorme is for the pro and aspiring all-natural-beauty outlookers. With shea
+      butter as our base ingredient, your are guaranteed moisture retention
+      abilities and vitamins with anti-aging properties, essential for healthy skin
+      and hair
+    </p>
   </section>
 
   <!-- discover collection section -->
@@ -69,11 +60,14 @@
         ligula vel tortor luctus finibus. Integer maximus tristique ipsum
       </p>
       <img src="../../assets/images/creams.svg" alt="Product image" />
-      <button>discover women's collection</button>
+      <router-link to="/shop">
+        <button>discover women's collection</button>
+      </router-link>
     </div>
 
     <!-- vertical divider -->
     <div class="vl"></div>
+    <hr />
 
     <!-- for men -->
     <div class="for-men">
@@ -83,7 +77,9 @@
         ligula vel tortor luctus finibus. Integer maximus tristique ipsum
       </p>
       <img src="../../assets/images/creams-men.svg" alt="Product image" />
-      <button>discover men's collection</button>
+      <router-link to="/shop">
+        <button>discover men's collection</button>
+      </router-link>
     </div>
   </section>
 </template>
@@ -104,25 +100,32 @@
 .feature-section {
   padding-inline: 4vw;
   padding-top: 8vw;
+  font-weight: 300;
 }
 
 .feature-section p {
-  padding-top: 30px;
+  margin-top: 50px;
   text-align: center;
-  word-spacing: 2px;
-  line-height: 26px;
-  width: 70%;
+  margin-inline: auto;
+  word-spacing: 1px;
+  line-height: 1.2;
+  width: 50%;
 }
 
 .features {
   max-width: 60%;
   color: #ffed78;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .features img {
   height: 80px;
+}
+
+.features h4 {
+  margin-top: 20px;
 }
 
 .discover {
@@ -163,6 +166,10 @@
   color: #eb38af;
 }
 
+.for-women p {
+  font-weight: 300;
+}
+
 .for-women button {
   color: white;
   background: linear-gradient(90deg, #d91883 0%, #fb449c 100%);
@@ -176,8 +183,16 @@
   margin-top: -10vh;
 }
 
+.discover hr {
+  display: none;
+}
+
 .for-men h2 {
   color: #307cc0;
+}
+
+.for-men p {
+  font-weight: 300;
 }
 
 .for-men button {
@@ -194,23 +209,28 @@
 }
 
 .vl {
-  border-left: 0.5px solid #e6e6e6;
   height: 100vh;
   margin-top: -40px;
   margin-inline: 40px;
+  border: 0.1px solid rgba(230, 230, 230, 0.5);
 }
 
+/* mobile styles */
 @media screen and (max-width: 480px) {
+  .hero-section div {
+    max-width: 100%;
+  }
+
   .feature-section {
     padding-inline: 5vw;
     padding-top: 4vw;
   }
 
   .features {
-    max-width: 60%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    gap: 30px;
   }
 
   .features img {
@@ -218,21 +238,24 @@
   }
 
   .features div {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .features h4 {
+    margin-top: 0px;
+    margin-left: 16px;
   }
 
   .feature-section p {
-    padding-top: 30px;
-    text-align: center;
-    word-spacing: 2px;
-    /* line-height: 26px; */
+    text-align: left;
     width: 100%;
   }
 
   .discover {
     display: block;
-    padding-inline: 4vw;
-    margin-top: 10vw;
+    padding-inline: 5vw;
+    margin-top: 8rem;
     padding-bottom: 25rem;
     background-image: url("../../assets/images/about_bg.svg");
   }
@@ -244,39 +267,15 @@
     text-align: left;
   }
 
-  .for-men {
-    width: 100%;
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .for-men h2 {
-    color: #307cc0;
-    text-align: left;
-  }
-
-  .for-men button {
-    color: white;
-    background: linear-gradient(90deg, #287ecd 0%, #19b2cb 100%, #19b2cb 100%);
-  }
-
-  .for-men img {
-    width: 20rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -4vh;
-  }
-
   .for-women {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .for-women h2 {
+    font-size: 1.5rem;
     color: #eb38af;
   }
 
@@ -293,9 +292,39 @@
     margin-top: -4vh;
   }
 
+  .discover hr {
+    display: block;
+    margin-block: 70px;
+  }
+
+  .for-men {
+    width: 100%;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .for-men h2 {
+    font-size: 1.5rem;
+    color: #307cc0;
+  }
+
+  .for-men button {
+    color: white;
+    background: linear-gradient(90deg, #287ecd 0%, #19b2cb 100%, #19b2cb 100%);
+  }
+
+  .for-men img {
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4vh;
+  }
+
   .vl {
-    border-left: 0.5px solid #e6e6e6;
-    height: 1vh;
+    display: none;
     margin-top: -40px;
     margin-inline: 40px;
   }

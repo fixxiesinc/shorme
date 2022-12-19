@@ -94,4 +94,36 @@
   .shop-items-container {
     margin-top: 30px;
   }
+
+  .container img {
+    height: 20px;
+    margin-left: 8px;
+  }
+
+  .category-item {
+    display: block;
+  }
+
+  .category-item-image {
+    height: 16rem;
+  }
+
+  .category-details {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .category-details p {
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+
+  .price-and-order-button {
+    margin-top: 50px;
+  }
+
+  .shop-items-container hr {
+    margin-block: 50px;
+    border: 0.1px solid rgba(230, 230, 230, 0.5);
+  }
 }

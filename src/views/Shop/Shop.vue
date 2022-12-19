@@ -1,13 +1,11 @@
 <template>
   <!-- hero section -->
-  <section class="hero-section">
+  <section class="hero-section-shop">
     <!-- shop label and toggle buttons -->
     <div class="hero-content">
       <div>
         <h1>shop</h1>
-        <p class="hero-caption">
-          We look to reveal the Africa in You, the natural beauty and color.
-        </p>
+        <p>We look to reveal the Africa in You, the natural beauty and color.</p>
       </div>
     </div>
 
@@ -79,10 +77,11 @@ export default {
   opacity: 0;
 }
 
-.hero-section {
+.hero-section-shop {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-inline: 4vw;
 }
 
 .hero-content {
@@ -94,15 +93,17 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
-  .hero-section {
+  .hero-section-shop {
     display: block;
     padding-bottom: 14rem;
-    /* justify-content: space-between;
-  align-items: flex-start; */
   }
 
   .hero-content {
     padding-bottom: 40px;
+  }
+
+  .hero-content p{
+    line-height: 1.2;
   }
 
   .toggle-buttons {

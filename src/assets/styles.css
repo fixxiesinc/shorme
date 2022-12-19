@@ -113,8 +113,13 @@ button {
 
 .hero-caption {
   margin-top: 6px;
-  max-width: 80%;
+  max-width: 75%;
   font-weight: 300;
+}
+
+.read-label {
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px) {
@@ -155,25 +160,19 @@ button {
     margin: 0;
   }
 
-  .hero-section {
-    padding-inline: 5vw;
-    /* padding-top: 2rem; */
-    /* border: 1px solid red; */
-  }
-
-  .hero-section h1 {
-    /* border: 1px solid white; */
-  }
-
   .hero-caption {
     margin-top: 6px;
     max-width: 100%;
-    /* border: 1px solid yellow; */
+    line-height: 1.2;
   }
 
   .yellow-button {
     margin-top: 20px;
     background-color: #ffed78;
     color: #985531;
+  }
+
+  .read-label {
+    margin-top: 16px;
   }
 }

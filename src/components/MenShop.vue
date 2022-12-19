@@ -82,4 +82,19 @@
   padding-top: 12rem;
   padding-inline: 4vw;
 }
+
+@media screen and (max-width: 480px) {
+  .shop-section-men {
+    top: -9rem;
+    padding-bottom: 15rem;
+    background-image: url("../assets/images/blue_bg_mobile.svg");
+    position: relative;
+    padding-top: 4rem;
+    padding-inline: 5vw;
+  }
+
+  .container h2 {
+    font-size: 26px;
+  }
+}
 </style>
